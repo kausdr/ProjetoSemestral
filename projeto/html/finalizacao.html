@@ -1,0 +1,89 @@
+<!--autenticação / login--> 
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='UTF-8'>
+        <meta http-equiv="X-UA-Compatible" content='IE=Edge'>
+        <meta name='viewport' content="width=width-device, initial-scale=1.0">
+        <title>Check out Boxes</title>
+        <link rel="stylesheet" href="../css/styles.css">
+
+        <script src="https://kit.fontawesome.com/6f32e8c415.js" crossorigin="anonymous"></script>
+        <script src='../js/inserePagamento.js' defer></script>
+    </head>
+    <body>
+        <header>
+            <div class='container'>
+                <h1 id='logo'>BOXES</h1>
+                <nav class='menu'>
+                    <ul>
+                        <li><a href='paginaPrincipal.html'>Início</a></li>
+                        <li><a href='produtos.html'>Produtos</a></li>
+                        <li><a href='carrinho.html'> <i class="fa-solid fa-cart-shopping"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section class='info'>
+            <div class='container'>
+                <h2>Pagamento</h2>
+                <p>Confira os dados de pagamento.</p>
+            </div>
+        </section>
+        <section class='login'>
+            <div class='container'>
+                <div id='infologin'>
+                    <div class='container'>
+                        <form class='escolher'>
+                            <h3>Escolha a forma de pagamento.</h3>
+                            <button type='button' id="cartao">Cartão de crédito</button>
+                            <button type='button' id="pix">PIX</button>
+                        </form>
+
+                        <form class='cartao' id='formCartao'>
+                            <h3>Insira os dados do cartão.</h3>
+                            <label for='numeroCartao'>Número do cartão:</label>
+                            <input type='number' id='numeroCartao' name='numeroCartao' placeholder='Insira o número do cartão'>
+                            <label for='nomeCartao'>Nome do cartão:</label>
+                            <input type='text' id='nomeCartao' name='nomeCartao' placeholder='Insira o nome que está no cartão'>
+                            <label for='cpfCartao'>CPF:</label>
+                            <input type='text' id='cpfCartao' name='cpfCartao' placeholder='Insira seu CPF'>
+                            <div id='valcvv'>
+                                <div id='val'>
+                                    <label for='validadeCartao'>Validade:</label>
+                                    <input type='date' id='validadeCartao' name='validadeCartao' placeholder='Insira a validade do cartão'>
+                                </div>
+                                <div id='cvv'>
+                                    <label for='cvvCartao'>CVV:</label>
+                                    <input type='number' id='cvvCartao' name='cvvCartao' placeholder='xxx'>
+                                </div>
+                            </div>
+                            <button type='button' id="finalizar">Finalizar</button>
+                        </form>
+
+                        <form class='pix'>
+                            <h3>PIX</h3>
+                            <h3>Ao finalizar a compra, será gerada uma chave PIX para o pagamento.</h3>
+                            <p>Se a compra não for paga em até 30 mintuos, o pedido será cancelado.</p>
+                            <button type='button' id="finalizar">Finalizar</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div id='img login'>
+
+                </div>
+            </div>
+            
+        </section>
+
+    </body>
+    <footer>
+        <div class='container'>
+            <div>
+                <p>Desenvolvido por <a href='https://github.com/kausdr' target='blank'>Kauane</a> para a disciplina de Programação Web</p>
+            </div>
+        </div>
+
+    </footer>
+</html>
